@@ -19,26 +19,37 @@
     <header class="page-header">
       <div class="container site-nav flexbox">
         <nav class="site-nav">
-          <a href="./index.html" class="link logo">
+          <a href="./index.html" class="logo">
             <span class="logo-main">Web</span
             ><span class="logo-part">Studio</span>
           </a>
           <ul class="list nav-list">
-            <li class="nav-item"><a href="./" class="link">Студия</a></li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="link-act">Портфолио</a>
+              <a href="./" class="link-act">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
+        <!--  почта и телефон в шапке-->
         <ul class="nav-auth list">
           <li class="auth-item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="mail-icon" width="16px" height="12px">
+                <use href="./img2/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:++38-096-111-11-11" class="link">+38 096 111 11 11</a>
+          <li class="auth-item">
+            <a href="tel:++38-096-111-11-11" class="link">
+              <svg class="tell-icon" width="10px" height="16px">
+                <use href="./img2/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -172,7 +183,7 @@
           </address>
         </div>
         <div class="social">
-          <h2 social-title>присоединяйтесь</h2>
+          <h2 class="social-title">присоединяйтесь</h2>
           <ul class="social-list list">
             <li class="social-icon-item">
               <a
