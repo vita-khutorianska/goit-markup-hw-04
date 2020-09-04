@@ -168,14 +168,17 @@ img {
 
 /* Герой*/
 .overlay {
-  max-width: 1600px;
-  min-height: 600px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 452px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+  height: 600px;
   text-align: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--bcg-hero);
   background-image: linear-gradient(
       to right,
