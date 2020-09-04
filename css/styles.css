@@ -18,6 +18,7 @@ html {
   --white: #ffffff;
   --button-bck-color: #f5f4fa;
   --bcg-hero: #c4c4c4;
+  --icon-color: #afb1b8;
 }
 body {
   color: var(--primery-text-colour);
@@ -51,27 +52,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* button*/
-
-.button.primary {
-  display: inline-block;
-  text-align: center;
-  border-radius: 4px;
-  border: none;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  color: var(--primery-text-colour);
-  background-color: var(--button-bck-color);
-  text-decoration: none;
-}
-
-.button.primary:focus,
-.button.primary:hover {
-  color: var(--white);
-  background-color: var(--acent);
+.vissualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*header*/
@@ -83,7 +72,6 @@ img {
 
 /* logo*/
 .logo {
-  display: flex;
   margin-right: 93px;
 
   font-family: raleway, sans-serif;
@@ -139,6 +127,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 /* навигация для авторизации*/
 .nav-auth {
@@ -146,7 +135,6 @@ img {
   align-items: center;
 }
 .nav-auth .link {
-  display: flex;
   align-items: center;
 
   font-weight: 500;
@@ -160,8 +148,21 @@ img {
 .link:focus {
   color: var(--acent);
 }
+.link:hover .mail-icon,
+.link:focus .mail-icon {
+  fill: var(--acent);
+}
+.link:hover .tell-icon,
+.link:focus .tell-icon {
+  fill: var(--acent);
+}
 .auth-item:not(:last-child) {
   margin-right: 30px;
+}
+.mail-icon,
+.tell-icon {
+  margin-right: 10px;
+  fill: var(--text-color);
 }
 
 /* Герой*/
@@ -208,16 +209,7 @@ img {
   text-decoration: none;
 }
 /*Преимущества*/
-.vissualy-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .feature {
   display: flex;
   flex-wrap: wrap;
@@ -354,8 +346,11 @@ img {
 .social-icon-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
+.social-icon-list {
+  margin-bottom: 30px;
+}
+
 .social-icon-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -373,7 +368,7 @@ img {
   background-color: var(--acent);
 }
 .social-icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
   width: 20px;
   height: 20px;
 }
@@ -382,10 +377,7 @@ img {
   fill: var(--white);
 }
 /* клиенты */
-.clients {
-  padding-top: 86px;
-  padding-bottom: 111px;
-}
+
 .client-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -397,32 +389,39 @@ img {
 }
 .client-list {
   display: flex;
-  flex-wrap: wrap;
 }
-.client-items {
-  width: 170x;
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
-.client-items {
-  width: calc((100% - 30px * 5) / 6);
+
+.client-items:not(:last-child) {
   margin-right: 30px;
 }
-
-.client-items:nth-child(6n) {
-  margin-right: 0;
+.client-icon {
+  fill: var(--icon-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--acent);
+}
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
+  fill: var(--acent);
 }
 
 /*fotter*/
 
 .footer {
-  padding: 60px 0;
   color: var(--white);
   background-color: var(--footer-bg-color);
 }
-
+/* section adress */
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -435,8 +434,11 @@ img {
   line-height: 1.2;
 }
 .adress {
-  margin: 0;
   flex-direction: column;
+}
+.adress {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .adress-link {
   display: block;
@@ -459,20 +461,66 @@ img {
   color: var(--white);
   font-style: normal;
 }
-
-/*наши работ ы*/
+/* section social */
+.social {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+/*наши работы*/
 a {
   text-decoration: none;
 }
 .filters-list {
   justify-content: center;
-  margin-bottom: 56px;
 }
+
 .filters-items:not(:last-child) {
   margin-right: 8px;
 }
+/* button*/
 
-.portfolio .subtitle {
+.button-filters {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--primery-text-colour);
+  background-color: var(--button-bck-color);
+  text-decoration: none;
+}
+
+.button-filters:focus,
+.button-filters:hover {
+  color: var(--white);
+  background-color: var(--acent);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.portfolio-title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -501,4 +549,9 @@ a {
 }
 .servise {
   padding: 20px 24px;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }

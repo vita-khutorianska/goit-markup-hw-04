@@ -19,7 +19,7 @@
     <header class="page-header">
       <div class="container site-nav flexbox">
         <nav class="site-nav">
-          <a href="./index.html" class="logo">
+          <a href="./index.html" class="link logo">
             <span class="logo-main">Web</span
             ><span class="logo-part">Studio</span>
           </a>
@@ -46,40 +46,42 @@
     <main>
       <!---Наши работы -->
       <section class="section portfolio">
-        <!--<h1 class="vissualy-hidden >Наши работы</h1>-->
+        <h1 class="vissualy-hidden">Наши работы</h1>
         <div class="container">
           <ul class="filters-list list flexbox">
             <li class="filters-items">
-              <button class="button primary">Все</button>
+              <button class="button-filters">Все</button>
             </li>
             <li class="filters-items">
-              <button class="button primary">Веб-сайты</button>
+              <button class="button-filters active">Веб-сайты</button>
             </li>
             <li class="filters-items">
-              <button class="button primary">Приложения</button>
+              <button class="button-filters">Приложения</button>
             </li>
             <li class="filters-items">
-              <button class="button primary">Дизайн</button>
+              <button class="button-filters">Дизайн</button>
             </li>
             <li class="filters-items">
-              <button class="button primary">Маркетинг</button>
+              <button class="button-filters">Маркетинг</button>
             </li>
           </ul>
           <ul class="portfolio-list list flexbox">
             <li class="portfolio-items">
-              <a href=""
+              <a class="portfolio-link" href=""
                 ><img src="./img2/img-1.jpg" alt="экран с фото" />
                 <div class="servise">
-                  <h2 class="subtitle">Технокряк</h2>
+                  <h2 class="portfolio-title">Технокряк</h2>
                   <p class="text">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-items">
-              <a href="">
+              <a class="portfolio-link" href="">
                 <img src="./img2/img-2.jpg" alt="баскетболисты с мячем" />
                 <div class="servise">
-                  <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="text">Дизайн</p>
                 </div>
               </a>
@@ -88,34 +90,34 @@
               <a href=""
                 ><img src="./img2/img-3.jpg" alt="акула с надписью" />
                 <div class="servise">
-                  <h2 class="subtitle">Ресторан Seafood</h2>
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
                   <p class="text">Приложение</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-items">
-              <a href=""
+              <a class="portfolio-link" href=""
                 ><img src="./img2/img-4.jpg" alt="наушники" />
                 <div class="servise">
-                  <h2 class="subtitle">Проект Prime</h2>
+                  <h2 class="portfolio-title">Проект Prime</h2>
                   <p class="text">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-items">
-              <a href=""
+              <a class="portfolio-link" href=""
                 ><img src="./img2/img-5.jpg" alt="коробочки" />
                 <div class="servise">
-                  <h2 class="subtitle">Проект Boxes</h2>
+                  <h2 class="portfolio-title">Проект Boxes</h2>
                   <p class="text">Приложение</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-items">
-              <a href=""
+              <a class="portfolio-link" href=""
                 ><img src="./img2/img-6.jpg" alt="монитор" />
                 <div class="servise">
-                  <h2 class="subtitle">Inspiration has no Borders</h2>
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
                   <p class="text">Веб-сайт</p>
                 </div>
               </a>
@@ -124,25 +126,25 @@
               <a href=""
                 ><img src="./img2/img-7.jpg" alt="открытый журнал" />
                 <div class="servise">
-                  <h2 class="subtitle">Издание Limited Edition</h2>
+                  <h2 class="portfolio-title">Издание Limited Edition</h2>
                   <p class="text">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-items">
-              <a href=""
+              <a class="portfolio-link" href=""
                 ><img src="./img2/img-8.jpg" alt="бирка" />
                 <div class="servise">
-                  <h2 class="subtitle">Проект LAB</h2>
+                  <h2 class="portfolio-title">Проект LAB</h2>
                   <p class="text">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="portfolio-items">
-              <a href=""
+              <a class="portfolio-link" href=""
                 ><img src="./img2/img-9.jpg" alt="ноутбук" />
                 <div class="servise">
-                  <h2 class="subtitle">Growing Business</h2>
+                  <h2 class="portfolio-title">Growing Business</h2>
                   <p class="text">Приложение</p>
                 </div>
               </a>
@@ -150,14 +152,16 @@
           </ul>
         </div>
       </section>
+    </main>
 
-      <!--- футер-->
-      <footer class="footer">
-        <div class="container">
+    <!--- футер-->
+    <footer class="footer">
+      <div class="container flexbox">
+        <div class="adress">
           <a href="WebStudio" class="logo"
             ><span class="logo-main">Web</span>Studio</a
           >
-          <address class="adress">
+          <address>
             <span class="company-adress">г. Киев, пр-т Леси Украинки, 26</span>
             <a href="mailto:info@devstudio.com" class="adress-link"
               >info@devstudio.com</a
@@ -167,7 +171,60 @@
             </a>
           </address>
         </div>
-      </footer>
-    </main>
+        <div class="social">
+          <h2 social-title>присоединяйтесь</h2>
+          <ul class="social-list list">
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                aria-label="ссылка Инстаграм"
+              >
+                <svg class="social-icon-footer">
+                  <use href="./img2/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link"
+                href="https://twitter.com/"
+                target="_blank"
+                aria-label="ссылка Твиттер"
+              >
+                <svg class="social-icon-footer">
+                  <use href="./img2/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link"
+                href="https://facebook.com/"
+                target="_blank"
+                aria-label="ссылка Фейсбук"
+              >
+                <svg class="social-icon-footer">
+                  <use href="./img2/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                aria-label="ссылка Линкедин"
+              >
+                <svg class="social-icon-footer">
+                  <use href="./img2/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
