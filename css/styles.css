@@ -169,9 +169,7 @@ img {
 /* Герой*/
 .overlay {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 200px 452px;
+  padding: 200px;
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -485,11 +483,25 @@ img {
   display: flex;
   justify-content: center;
 }
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 .social-icon-footer {
   width: 20px;
   height: 20px;
   fill: var(--white);
 }
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--acent);
+}
+
 /*наши работы*/
 a {
   text-decoration: none;
