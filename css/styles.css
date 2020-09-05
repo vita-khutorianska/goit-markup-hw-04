@@ -350,7 +350,7 @@ img {
   justify-content: center;
 }
 .social-icon-list {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .social-icon-item:not(:last-child) {
